@@ -1,0 +1,104 @@
+# Regional mapping - focus on actual regions (Régions) for 2024
+# Organized by French administrative regions
+
+regions:
+  auvergne_rhone_alpes:
+    folder_name: "Auvergne-Rhone-Alpes"
+    official_name: "Auvergne-Rhône-Alpes"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 17
+    pages_end: 29
+
+  bourgogne_franche_comte:
+    folder_name: "Bourgogne-Franche-Comté"
+    official_name: "Bourgogne-Franche-Comté"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 271
+    pages_end: 283
+
+  bretagne:
+    folder_name: "Bretagne"
+    official_name: "Bretagne"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 19
+    pages_end: 31
+
+  centre:
+    folder_name: "Centre"
+    official_name: "Centre-Val de Loire"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 31
+    pages_end: 43
+
+  grand_est:
+    folder_name: "Grand Est"
+    official_name: "Grand Est"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 17
+    pages_end: 29
+
+  hauts_de_france:
+    folder_name: "HdF"
+    official_name: "Hauts-de-France"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 25
+    pages_end: 37
+
+  ile_de_france:
+    folder_name: "IdF"
+    official_name: "Île-de-France"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 39
+    pages_end: 51
+
+  normandie:
+    folder_name: "Normandie"
+    official_name: "Normandie"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 23
+    pages_end: 35
+
+  nouvelle_aquitaine:
+    folder_name: "Nouvelle-Aquitaine"
+    official_name: "Nouvelle-Aquitaine"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 28
+    pages_end: 40
+
+  occitanie:
+    folder_name: "Occitanie"
+    official_name: "Occitanie"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 23
+    pages_end: 35
+
+  paca:
+    folder_name: "PACA"
+    official_name: "Provence-Alpes-Côte d'Azur"
+    type: "région"
+    bp_pdf: "BP2024.pdf"
+    ca_pdf: "CA2024.pdf"
+    pages_start: 31
+    pages_end: 38
+
+  note: "Other folders (Alsace, Bouches du Rhône, etc.) are departments or cities, not regions"
