@@ -1,0 +1,11 @@
+Auvergne Rhone Alpes 17-29
+Bourgogne Franche Comté 271-283
+Bretagne 19-31
+Centre VdL 31-43
+Grand Est pp 17-29
+Hauts de France 25-37
+Ile de France 39-51
+Normandie 23-35
+Nouvelle Aquitaine 28-40
+Occitanie 23-35
+Provence Alpes Cote d'Azur 31-38 
