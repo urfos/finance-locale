@@ -46,13 +46,28 @@ def parse_tables_from_pdf(pdf_path, region_name):
                             # Convert table to DataFrame
                             # First row is usually headers
                             if len(table) > 1:
-                                df = pd.DataFrame(table[1:], columns=table[0])
+                                # Handle duplicate column names by making them unique
+                                headers = table[0]
+                                # Make column names unique to avoid concat issues
+                                seen = {}
+                                unique_headers = []
+                                for h in headers:
+                                    h_str = str(h) if h else 'Empty'
+                                    if h_str in seen:
+                                        seen[h_str] += 1
+                                        unique_headers.append(f"{h_str}_{seen[h_str]}")
+                                    else:
+                                        seen[h_str] = 0
+                                        unique_headers.append(h_str)
+                                
+                                df = pd.DataFrame(table[1:], columns=unique_headers)
                             else:
                                 df = pd.DataFrame(table)
                             
                             # Add metadata columns
                             df['_source_page'] = page_idx + 1
                             df['_source_region'] = region_name
+                            df['_table_index'] = table_idx
                             
                             all_tables.append(df)
                             table_count += 1
@@ -63,13 +78,13 @@ def parse_tables_from_pdf(pdf_path, region_name):
             print(f"  WARNING: No tables found in PDF")
             return False
         
-        # Combine all tables - pad with NaN for missing columns
-        combined_df = pd.concat(all_tables, axis=0, ignore_index=True, sort=True)
+        # Combine all tables - use outer join to keep all columns
+        combined_df = pd.concat(all_tables, axis=0, ignore_index=True, sort=False, join='outer')
         
-        # Reorder columns: metadata first, then others
+        # Reorder columns: metadata first (string columns starting with _), then others
         cols = combined_df.columns.tolist()
-        metadata_cols = [c for c in cols if c.startswith('_')]
-        data_cols = [c for c in cols if not c.startswith('_')]
+        metadata_cols = [c for c in cols if isinstance(c, str) and c.startswith('_')]
+        data_cols = [c for c in cols if not (isinstance(c, str) and c.startswith('_'))]
         combined_df = combined_df[metadata_cols + data_cols]
         
         # Save to CSV
