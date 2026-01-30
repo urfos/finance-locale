@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+Nouvelle-Aquitaine;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;0.00;0.00;2703924625.18;2703924625.18;2703924625.18
+Nouvelle-Aquitaine;investment_expense;data;0;1;90 Opérations ventilées;0.00;0.00;1117774048.00;1117774048.00;1117774048.00
+Nouvelle-Aquitaine;investment_expense;data;1;1;- en AP/CP (2);0.00;0.00;1117729048.00;1117729048.00;1117729048.00
+Nouvelle-Aquitaine;investment_expense;data;1;1;- hors AP/CP (2);0.00;0.00;45000.00;45000.00;45000.00
+Nouvelle-Aquitaine;investment_expense;data;1;1;Dont opérations pour comptes de tiers;0.00;0.00;2500000.00;2500000.00;2500000.00
+Nouvelle-Aquitaine;investment_expense;data;0;2;92 Opérations non ventilées;0.00;0.00;1586150577.18;1586150577.18;1586150577.18
+Nouvelle-Aquitaine;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Nouvelle-Aquitaine;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;0.00;0.00;2703924625.18;2703924625.18;2703924625.18
+Nouvelle-Aquitaine;investment_revenue;data;0;5;90 Opérations ventilées;0.00;0.00;348092000.00;348092000.00;348092000.00
+Nouvelle-Aquitaine;investment_revenue;data;1;5;- Recettes affectées;0.00;0.00;335092000.00;335092000.00;335092000.00
+Nouvelle-Aquitaine;investment_revenue;data;1;5;- Financement par le tiers de l’opération confiée à la collectivité;0.00;0.00;13000000.00;13000000.00;13000000.00
+Nouvelle-Aquitaine;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);0.00;0.00;2176074718.18;2176074718.18;2176074718.18
+Nouvelle-Aquitaine;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;0.00;0.00;0.00;0.00;0.00
+Nouvelle-Aquitaine;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;0.00;;179757907.00;179757907.00;179757907.00
+Nouvelle-Aquitaine;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+Nouvelle-Aquitaine;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Nouvelle-Aquitaine;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;0.00;0.00;3385682991.00;3385682991.00;3385682991.00
+Nouvelle-Aquitaine;operating_expense;data;0;12;93 Services ventilés;0.00;0.00;2066283625.00;2066283625.00;2066283625.00
+Nouvelle-Aquitaine;operating_expense;data;1;12;- en AE/CP;0.00;0.00;1581209418.00;1581209418.00;1581209418.00
+Nouvelle-Aquitaine;operating_expense;data;1;12;- hors AE/CP;0.00;0.00;485074207.00;485074207.00;485074207.00
+Nouvelle-Aquitaine;operating_expense;data;0;13;94 Services communs non ventilés;0.00;0.00;1139641459.00;1139641459.00;1139641459.00
+Nouvelle-Aquitaine;operating_expense;data;0;14;953 Virement à la section d'investissement;0.00;;179757907.00;179757907.00;179757907.00
+Nouvelle-Aquitaine;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+Nouvelle-Aquitaine;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;0.00;0.00;3385682991.00;3385682991.00;3385682991.00
+Nouvelle-Aquitaine;operating_revenue;data;0;17;93 Services ventilés;0.00;0.00;140449688.00;140449688.00;140449688.00
+Nouvelle-Aquitaine;operating_revenue;data;0;18;94 Services communs non ventilés;0.00;0.00;3245233303.00;3245233303.00;3245233303.00
+Nouvelle-Aquitaine;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00

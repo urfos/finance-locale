@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+IdF;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;3512516000.00;0.00;3736719000.00;3736719000.00;3736719000.00
+IdF;investment_expense;data;0;1;90 Opérations ventilées;2125000000.00;0.00;2325000000.00;2325000000.00;2325000000.00
+IdF;investment_expense;data;1;1;- en AP/CP (2);2123717000.00;0.00;2324980000.00;2324980000.00;2324980000.00
+IdF;investment_expense;data;1;1;- hors AP/CP (2);1283000.00;0.00;20000.00;20000.00;20000.00
+IdF;investment_expense;data;1;1;Dont opérations pour comptes de tiers;5158433.00;0.00;5239000.00;5239000.00;5239000.00
+IdF;investment_expense;data;0;2;92 Opérations non ventilées;1387516000.00;0.00;1411719000.00;1411719000.00;1411719000.00
+IdF;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+IdF;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;3512516000.00;0.00;3736719000.00;3736719000.00;3736719000.00
+IdF;investment_revenue;data;0;5;90 Opérations ventilées;190797000.00;0.00;139799000.00;139799000.00;139799000.00
+IdF;investment_revenue;data;1;5;- Recettes affectées;178654000.00;0.00;133589000.00;133589000.00;133589000.00
+IdF;investment_revenue;data;1;5;- Financement par le tiers de l’opération confiée à la collectivité;12143000.00;0.00;6210000.00;6210000.00;6210000.00
+IdF;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);3276463000.00;0.00;3318492000.00;3318492000.00;3318492000.00
+IdF;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;0.00;0.00;0.00;0.00;0.00
+IdF;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;45256000.00;;278428000.00;278428000.00;278428000.00
+IdF;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+IdF;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+IdF;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;5613108000.00;0.00;5909815500.00;5909815500.00;5909815500.00
+IdF;operating_expense;data;0;12;93 Services ventilés;2697135000.00;0.00;2807135000.00;2807135000.00;2807135000.00
+IdF;operating_expense;data;1;12;- en AE/CP;2185066000.00;0.00;2262507000.00;2262507000.00;2262507000.00
+IdF;operating_expense;data;1;12;- hors AE/CP;512069000.00;0.00;544628000.00;544628000.00;544628000.00
+IdF;operating_expense;data;0;13;94 Services communs non ventilés;2870717000.00;0.00;2824252500.00;2824252500.00;2824252500.00
+IdF;operating_expense;data;0;14;953 Virement à la section d'investissement;45256000.00;;278428000.00;278428000.00;278428000.00
+IdF;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+IdF;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;5613108000.00;0.00;5909815500.00;5909815500.00;5909815500.00
+IdF;operating_revenue;data;0;17;93 Services ventilés;153250000.00;0.00;320770000.00;320770000.00;320770000.00
+IdF;operating_revenue;data;0;18;94 Services communs non ventilés;5459858000.00;0.00;5589045500.00;5589045500.00;5589045500.00
+IdF;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00

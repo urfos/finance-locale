@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+Bourgogne-Franche-Comté;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;0.00;0.00;1086807321.91;1086807321.91;1086807321.91
+Bourgogne-Franche-Comté;investment_expense;data;0;1;90 Opérations ventilées;0.00;0.00;615359804.91;615359804.91;615359804.91
+Bourgogne-Franche-Comté;investment_expense;data;1;1;-en AP/CP (2);0.00;0.00;615338804.91;615338804.91;615338804.91
+Bourgogne-Franche-Comté;investment_expense;data;1;1;-hors AP/CP (2);0.00;0.00;21000.00;21000.00;21000.00
+Bourgogne-Franche-Comté;investment_expense;data;1;1;Dont opérations pour comptes de tiers;0.00;0.00;1378220.00;1378220.00;1378220.00
+Bourgogne-Franche-Comté;investment_expense;data;0;2;92 Opérations non ventilées;0.00;0.00;471447517.00;471447517.00;471447517.00
+Bourgogne-Franche-Comté;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Bourgogne-Franche-Comté;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;0.00;0.00;1086807321.91;1086807321.91;1086807321.91
+Bourgogne-Franche-Comté;investment_revenue;data;0;5;90 Opérations ventilées;0.00;0.00;149867674.77;149867674.77;149867674.77
+Bourgogne-Franche-Comté;investment_revenue;data;1;5;-Recettes affectées;0.00;0.00;149867674.77;149867674.77;149867674.77
+Bourgogne-Franche-Comté;investment_revenue;data;1;5;-Financement par le tiers de l’opération confiée à la collectivité;0.00;0.00;0.00;0.00;0.00
+Bourgogne-Franche-Comté;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);0.00;0.00;872765337.46;872765337.46;872765337.46
+Bourgogne-Franche-Comté;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;0.00;0.00;0.00;0.00;0.00
+Bourgogne-Franche-Comté;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;0.00;;64174309.68;64174309.68;64174309.68
+Bourgogne-Franche-Comté;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+Bourgogne-Franche-Comté;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Bourgogne-Franche-Comté;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;0.00;0.00;1675266188.17;1675266188.17;1675266188.17
+Bourgogne-Franche-Comté;operating_expense;data;0;12;93 Services ventilés;0.00;0.00;1106338330.49;1106338330.49;1106338330.49
+Bourgogne-Franche-Comté;operating_expense;data;1;12;-en AE/CP;0.00;0.00;789004729.09;789004729.09;789004729.09
+Bourgogne-Franche-Comté;operating_expense;data;1;12;-hors AE/CP;0.00;0.00;317333601.40;317333601.40;317333601.40
+Bourgogne-Franche-Comté;operating_expense;data;0;13;94 Services communs non ventilés;0.00;0.00;504753548.00;504753548.00;504753548.00
+Bourgogne-Franche-Comté;operating_expense;data;0;14;953 Virement à la section d'investissement;0.00;;64174309.68;64174309.68;64174309.68
+Bourgogne-Franche-Comté;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+Bourgogne-Franche-Comté;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;0.00;0.00;1675266188.17;1675266188.17;1675266188.17
+Bourgogne-Franche-Comté;operating_revenue;data;0;17;93 Services ventilés;0.00;0.00;136183766.17;136183766.17;136183766.17
+Bourgogne-Franche-Comté;operating_revenue;data;0;18;94 Services communs non ventilés;0.00;0.00;1539082422.00;1539082422.00;1539082422.00
+Bourgogne-Franche-Comté;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00

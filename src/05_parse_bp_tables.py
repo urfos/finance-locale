@@ -1,177 +1,285 @@
 #!/usr/bin/env python3
 """
-Phase 2: Parse tables from consolidated BP PDFs
-Extracts tables from consolidated PDFs and saves as CSV files
-One CSV per region containing all tables from that region's budget document
+BP Table Parser v2 - Row Expansion Edition
+Extracts Table 3 from BP PDFs, expands multi-line cells into separate rows
+Output: Semicolon-delimited CSV for French Excel compatibility
+
+Test mode: Auvergne-Rhone-Alpes and Bretagne only
 """
 
 import pdfplumber
-import pandas as pd
 from pathlib import Path
 import sys
-import re
 
-# Configuration
 OUTPUT_DIR = Path(__file__).parent.parent / "output"
 YEAR = "2024"
 
-def get_region_from_filename(filename):
-    """Extract region name from filename like 'BP_2024_Auvergne-Rhone-Alpes_extracted.pdf'"""
-    match = re.search(r'BP_\d{4}_(.+)_extracted\.pdf', filename)
-    if match:
-        return match.group(1)
-    return None
+# Test regions only - do not modify until user approves structure
+# UPDATE: User approved - now processing all regions
+ALL_REGIONS = [
+    "Auvergne-Rhone-Alpes", "Bourgogne-Franche-Comté", "Bretagne", "Centre",
+    "Grand Est", "HdF", "IdF", "Normandie", "Nouvelle-Aquitaine", "Occitanie", "PACA"
+]
 
-def parse_tables_from_pdf(pdf_path, region_name):
+
+def clean_text(text):
     """
-    Extract tables from first page of PDF only.
-    - Keep only rows with multiple columns (>1)
-    - Ensure all rows have same number of columns
-    - Skip title lines
+    Clean text cell: remove leading '=' and trim whitespace
     """
+    if not text:
+        return ''
+    text = str(text).strip()
+    # Remove leading '=' which causes Excel formula issues
+    if text.startswith('='):
+        text = text[1:].strip()
+    return text
+
+
+def clean_number(value):
+    """
+    Convert French number format to R-readable format:
+    - Remove spaces (thousands separator)
+    - Replace comma with dot (decimal separator)
+    Example: "3 926 800 000,00" -> "3926800000.00"
+    """
+    if not value:
+        return ''
+    val = str(value).strip()
+    if not val:
+        return ''
+    # Remove all spaces
+    val = val.replace(' ', '')
+    # Replace comma with dot for decimal
+    val = val.replace(',', '.')
+    return val
+
+
+def determine_section(description_text):
+    """
+    Determine budget section from description.
+    Returns: (section_name, is_section_header)
+    """
+    if not description_text:
+        return 'unknown', False
     
-    print(f"\nParsing: {region_name}")
-    print(f"  Source: {pdf_path.name}")
+    text_upper = description_text.upper()
+    
+    if "DEPENSES" in text_upper and "INVESTISSEMENT" in text_upper:
+        return 'investment_expense', True
+    elif "RECETTES" in text_upper and "INVESTISSEMENT" in text_upper:
+        return 'investment_revenue', True
+    elif "DEPENSES" in text_upper and "FONCTIONNEMENT" in text_upper:
+        return 'operating_expense', True
+    elif "RECETTES" in text_upper and "FONCTIONNEMENT" in text_upper:
+        return 'operating_revenue', True
+    
+    return 'unknown', False
+
+
+def expand_multiline_row(row, region, current_section, row_index):
+    """
+    Expand a row with multi-line cells into multiple rows.
+    
+    Input row: 6 cells, some may contain newlines
+    Returns: list of expanded row dicts
+    """
+    # Check if first column has newlines (indicates multi-line structure)
+    description = str(row[0]) if row[0] else ''
+    
+    if '\n' not in description:
+        # Single-line row - no expansion needed
+        section, is_header = determine_section(description)
+        if is_header:
+            current_section = section
+        
+        return [{
+            'region': region,
+            'section': current_section,
+            'row_type': 'section_header' if is_header else 'data',
+            'level': 0,
+            'row_index': row_index,
+            'description': clean_text(description),
+            'budget_anterieur': clean_number(row[1]),
+            'restes_a_realiser_n1': clean_number(row[2]),
+            'propositions_nouvelles': clean_number(row[3]),
+            'vote_assemblee': clean_number(row[4]),
+            'total_budget': clean_number(row[5])
+        }], current_section
+    
+    # Multi-line row - expand each line into separate row
+    descriptions = description.split('\n')
+    
+    # Split all value columns by newline
+    col1_values = str(row[1]).split('\n') if row[1] else ['']
+    col2_values = str(row[2]).split('\n') if row[2] else ['']
+    col3_values = str(row[3]).split('\n') if row[3] else ['']
+    col4_values = str(row[4]).split('\n') if row[4] else ['']
+    col5_values = str(row[5]).split('\n') if row[5] else ['']
+    
+    # Determine max lines
+    max_lines = max(len(descriptions), len(col1_values), len(col2_values), 
+                    len(col3_values), len(col4_values), len(col5_values))
+    
+    # Pad shorter lists
+    def pad_list(lst, length):
+        return lst + [''] * (length - len(lst))
+    
+    descriptions = pad_list(descriptions, max_lines)
+    col1_values = pad_list(col1_values, max_lines)
+    col2_values = pad_list(col2_values, max_lines)
+    col3_values = pad_list(col3_values, max_lines)
+    col4_values = pad_list(col4_values, max_lines)
+    col5_values = pad_list(col5_values, max_lines)
+    
+    expanded_rows = []
+    for i in range(max_lines):
+        desc = descriptions[i].strip()
+        
+        # Determine level: 0 for first line, 1 for sub-lines
+        level = 0 if i == 0 else 1
+        
+        # Check if this is a section header (only on level 0)
+        section, is_header = determine_section(desc) if level == 0 else ('unknown', False)
+        if is_header:
+            current_section = section
+        
+        expanded_rows.append({
+            'region': region,
+            'section': current_section,
+            'row_type': 'section_header' if is_header else 'data',
+            'level': level,
+            'row_index': row_index,
+            'description': clean_text(desc),
+            'budget_anterieur': clean_number(col1_values[i]),
+            'restes_a_realiser_n1': clean_number(col2_values[i]),
+            'propositions_nouvelles': clean_number(col3_values[i]),
+            'vote_assemblee': clean_number(col4_values[i]),
+            'total_budget': clean_number(col5_values[i])
+        })
+    
+    return expanded_rows, current_section
+
+
+def parse_pdf_to_rows(pdf_path, region):
+    """
+    Parse PDF Table 3, expand multi-line cells, return list of row dicts
+    """
+    print(f"\nParsing: {region}")
+    print(f"  File: {pdf_path.name}")
     
     try:
-        all_tables = []
-        
         with pdfplumber.open(pdf_path) as pdf:
-            # Process only first page
-            if len(pdf.pages) == 0:
-                print(f"  ERROR: PDF has no pages")
-                return False
+            if not pdf.pages:
+                print("  ERROR: No pages in PDF")
+                return None
             
             page = pdf.pages[0]
             tables = page.extract_tables()
             
-            if not tables:
-                print(f"  WARNING: No tables found on first page")
-                return False
+            if not tables or len(tables) < 4:
+                print(f"  ERROR: Expected 4 tables, found {len(tables) if tables else 0}")
+                return None
             
-            table_count = 0
-            for table_idx, table in enumerate(tables):
-                if not table or len(table) == 0:
+            # Table 3 is the main budget data
+            data_table = tables[3]
+            if not data_table:
+                print("  ERROR: Table 3 is empty")
+                return None
+            
+            print(f"  Found {len(data_table)} rows in Table 3")
+            
+            all_rows = []
+            current_section = 'unknown'
+            
+            for row_idx, row in enumerate(data_table):
+                if not row or len(row) != 6:
+                    print(f"  WARNING: Skipping row {row_idx} - expected 6 cols, got {len(row) if row else 0}")
                     continue
                 
-                # Filter rows: keep only those with multiple columns (>1)
-                filtered_rows = [row for row in table if row and len(row) > 1]
-                
-                if len(filtered_rows) < 2:  # Need at least header + 1 data row
-                    continue
-                
-                # Get number of columns from header
-                header = filtered_rows[0]
-                num_cols = len(header)
-                
-                # Keep only rows that match column count
-                valid_rows = [header]
-                for row in filtered_rows[1:]:
-                    if len(row) == num_cols:
-                        valid_rows.append(row)
-                
-                if len(valid_rows) < 2:  # Need at least header + 1 data row
-                    continue
-                
-                # Make column names unique
-                headers = valid_rows[0]
-                seen = {}
-                unique_headers = []
-                for h in headers:
-                    h_str = str(h) if h else 'Empty'
-                    if h_str in seen:
-                        seen[h_str] += 1
-                        unique_headers.append(f"{h_str}_{seen[h_str]}")
-                    else:
-                        seen[h_str] = 0
-                        unique_headers.append(h_str)
-                
-                # Create DataFrame with valid rows
-                df = pd.DataFrame(valid_rows[1:], columns=unique_headers)
-                
-                # Add metadata columns
-                df['_source_page'] = 1
-                df['_source_region'] = region_name
-                df['_table_index'] = table_idx
-                
-                all_tables.append(df)
-                table_count += 1
-        
-        if not all_tables:
-            print(f"  WARNING: No valid tables found on first page")
-            return False
-        
-        # Combine all tables - use outer join to keep all columns
-        combined_df = pd.concat(all_tables, axis=0, ignore_index=True, sort=False, join='outer')
-        
-        # Reorder columns: metadata first (string columns starting with _), then others
-        cols = combined_df.columns.tolist()
-        metadata_cols = [c for c in cols if isinstance(c, str) and c.startswith('_')]
-        data_cols = [c for c in cols if not (isinstance(c, str) and c.startswith('_'))]
-        combined_df = combined_df[metadata_cols + data_cols]
-        
-        # Save to CSV
-        output_filename = f"BP_{YEAR}_{region_name}_raw_tables.csv"
-        output_path = OUTPUT_DIR / output_filename
-        
-        combined_df.to_csv(output_path, index=False, encoding='utf-8')
-        
-        print(f"  ✓ Extracted {table_count} tables from first page")
-        print(f"  ✓ Rows: {len(combined_df)}, Columns: {len(combined_df.columns)}")
-        print(f"  ✓ Saved to: {output_filename}")
-        
-        return True
-        
+                expanded, current_section = expand_multiline_row(
+                    row, region, current_section, row_idx
+                )
+                all_rows.extend(expanded)
+            
+            print(f"  ✓ Expanded to {len(all_rows)} rows")
+            
+            # Count sections
+            sections = set(r['section'] for r in all_rows)
+            print(f"  ✓ Sections found: {sorted(sections)}")
+            
+            return all_rows
+            
     except Exception as e:
         print(f"  ERROR: {e}")
         import traceback
         traceback.print_exc()
-        return False
+        return None
+
+
+def write_csv(rows, output_path):
+    """
+    Write rows to CSV with semicolon delimiter
+    """
+    columns = [
+        'region', 'section', 'row_type', 'level', 'row_index',
+        'description', 'budget_anterieur', 'restes_a_realiser_n1',
+        'propositions_nouvelles', 'vote_assemblee', 'total_budget'
+    ]
+    
+    with open(output_path, 'w', encoding='utf-8-sig') as f:
+        # Write header
+        f.write(';'.join(columns) + '\n')
+        
+        # Write data rows
+        for row in rows:
+            values = []
+            for col in columns:
+                val = str(row.get(col, ''))
+                # Escape semicolons in values if present
+                if ';' in val:
+                    val = f'"{val}"'
+                values.append(val)
+            f.write(';'.join(values) + '\n')
+    
+    print(f"  ✓ Saved: {output_path.name}")
+
 
 def main():
-    """Parse tables from first page of extracted PDFs - TEST VERSION
-    Only tests first region of each group (Auvergne-Rhone-Alpes and Bretagne)
     """
+    Parse all 11 regions
+    """
+    print("=" * 70)
+    print("BP TABLE PARSER v2 - ROW EXPANSION")
+    print("=" * 70)
+    print(f"\nProcessing {len(ALL_REGIONS)} regions")
+    print("Delimiter: semicolon (;) for French Excel\n")
     
-    print("="*70)
-    print("PHASE 2: PDF TABLE PARSING - TEST MODE")
-    print("="*70)
+    success = 0
+    failed = 0
     
-    # Test regions: first of each group
-    test_regions = ["Auvergne-Rhone-Alpes", "Bretagne"]
-    
-    # Find test PDFs
-    test_pdfs = []
-    for pdf_file in OUTPUT_DIR.glob(f"BP_{YEAR}_*_extracted.pdf"):
-        region = get_region_from_filename(pdf_file.name)
-        if region in test_regions:
-            test_pdfs.append(pdf_file)
-    
-    if not test_pdfs:
-        print("ERROR: No test PDF files found")
-        return False
-    
-    print(f"\nTesting on {len(test_pdfs)} region(s): {', '.join(test_regions)}")
-    
-    success_count = 0
-    fail_count = 0
-    
-    for pdf_path in sorted(test_pdfs):
-        region = get_region_from_filename(pdf_path.name)
-        if region:
-            if parse_tables_from_pdf(pdf_path, region):
-                success_count += 1
-            else:
-                fail_count += 1
+    for region in ALL_REGIONS:
+        pdf_path = OUTPUT_DIR / f"BP_{YEAR}_{region}_extracted.pdf"
+        
+        if not pdf_path.exists():
+            print(f"\nERROR: PDF not found for {region}")
+            failed += 1
+            continue
+        
+        rows = parse_pdf_to_rows(pdf_path, region)
+        
+        if rows:
+            output_path = OUTPUT_DIR / f"BP_{YEAR}_{region}.csv"
+            write_csv(rows, output_path)
+            success += 1
         else:
-            print(f"WARNING: Could not extract region from {pdf_path.name}")
-            fail_count += 1
+            failed += 1
     
-    print("\n" + "="*70)
-    print(f"Test complete: {success_count} succeeded, {fail_count} failed")
-    print("="*70)
+    print("\n" + "=" * 70)
+    print(f"Complete: {success} succeeded, {failed} failed")
+    print("=" * 70)
     
-    return fail_count == 0
+    return failed == 0
+
 
 if __name__ == "__main__":
     success = main()

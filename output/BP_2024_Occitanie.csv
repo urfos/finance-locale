@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+Occitanie;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;2229802326.49;0.00;2360434712.87;0.00;2360434712.87
+Occitanie;investment_expense;data;0;1;90 Opérations ventilées;1348034451.00;0.00;1201827511.00;0.00;1201827511.00
+Occitanie;investment_expense;data;1;1;-en AP/CP (2);1286168651.00;0.00;1134017511.00;0.00;1134017511.00
+Occitanie;investment_expense;data;1;1;-hors AP/CP (2);61865800.00;0.00;67810000.00;0.00;67810000.00
+Occitanie;investment_expense;data;1;1;Dont opérations pour comptes de tiers;1341555.78;0.00;428953.38;0.00;428953.38
+Occitanie;investment_expense;data;0;2;92 Opérations non ventilées;881767875.49;0.00;1158607201.87;0.00;1158607201.87
+Occitanie;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Occitanie;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;2229802326.49;0.00;2360434712.87;0.00;2360434712.87
+Occitanie;investment_revenue;data;0;5;90 Opérations ventilées;546617791.00;0.00;459186350.00;0.00;459186350.00
+Occitanie;investment_revenue;data;1;5;-Recettes affectées;537232421.00;0.00;453046350.00;0.00;453046350.00
+Occitanie;investment_revenue;data;1;5;-Financement par le tiers de l’opération confiée à la collectivité;9385370.00;0.00;6140000.00;0.00;6140000.00
+Occitanie;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);1679384535.49;0.00;1901128362.87;0.00;1901128362.87
+Occitanie;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;3800000.00;0.00;120000.00;0.00;120000.00
+Occitanie;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;0.00;;0.00;0.00;0.00
+Occitanie;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+Occitanie;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Occitanie;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;2997680068.49;0.00;3090075837.41;0.00;3090075837.41
+Occitanie;operating_expense;data;0;12;93 Services ventilés;1978605282.53;0.00;2018479614.38;0.00;2018479614.38
+Occitanie;operating_expense;data;1;12;-en AE/CP;1541737062.53;0.00;1585309002.38;0.00;1585309002.38
+Occitanie;operating_expense;data;1;12;-hors AE/CP;436868220.00;0.00;433170612.00;0.00;433170612.00
+Occitanie;operating_expense;data;0;13;94 Services communs non ventilés;1019074785.96;0.00;1071596223.03;0.00;1071596223.03
+Occitanie;operating_expense;data;0;14;953 Virement à la section d'investissement;0.00;;0.00;0.00;0.00
+Occitanie;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+Occitanie;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;2997680068.49;0.00;3090075837.41;0.00;3090075837.41
+Occitanie;operating_revenue;data;0;17;93 Services ventilés;358475533.00;0.00;397739175.00;0.00;397739175.00
+Occitanie;operating_revenue;data;0;18;94 Services communs non ventilés;2639204535.49;0.00;2692336662.41;0.00;2692336662.41
+Occitanie;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00

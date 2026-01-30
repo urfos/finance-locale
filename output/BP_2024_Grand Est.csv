@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+Grand Est;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;2863554063.00;0.00;3006367194.00;3006367194.00;3006367194.00
+Grand Est;investment_expense;data;0;1;90 Opérations ventilées;1441047872.00;0.00;1764640361.00;1764640361.00;1764640361.00
+Grand Est;investment_expense;data;1;1;- en AP/CP (2);1332832164.00;0.00;1562889361.00;1562889361.00;1562889361.00
+Grand Est;investment_expense;data;1;1;- hors AP/CP (2);108215708.00;0.00;201751000.00;201751000.00;201751000.00
+Grand Est;investment_expense;data;1;1;Dont opérations pour comptes de tiers;12022952.00;0.00;13713400.00;13713400.00;13713400.00
+Grand Est;investment_expense;data;0;2;92 Opérations non ventilées;1422506191.00;0.00;1241726833.00;1241726833.00;1241726833.00
+Grand Est;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Grand Est;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;2863554063.00;0.00;3006367194.00;3006367194.00;3006367194.00
+Grand Est;investment_revenue;data;0;5;90 Opérations ventilées;668385619.00;0.00;978590261.00;978590261.00;978590261.00
+Grand Est;investment_revenue;data;1;5;- Recettes affectées;663965619.00;0.00;970290261.00;970290261.00;970290261.00
+Grand Est;investment_revenue;data;1;5;- Financement par le tiers de l’opération confiée à la collectivité;4420000.00;0.00;8300000.00;8300000.00;8300000.00
+Grand Est;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);1871579610.00;0.00;1689258397.00;1689258397.00;1689258397.00
+Grand Est;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;1660000.00;0.00;2050000.00;2050000.00;2050000.00
+Grand Est;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;321928834.00;;336468536.00;336468536.00;336468536.00
+Grand Est;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+Grand Est;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Grand Est;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;3328603356.00;0.00;3657428319.00;3657428319.00;3657428319.00
+Grand Est;operating_expense;data;0;12;93 Services ventilés;2085132262.00;0.00;2355763557.00;2355763557.00;2355763557.00
+Grand Est;operating_expense;data;1;12;- en AE/CP;1705497424.00;0.00;1943970784.00;1943970784.00;1943970784.00
+Grand Est;operating_expense;data;1;12;- hors AE/CP;379634838.00;0.00;411792773.00;411792773.00;411792773.00
+Grand Est;operating_expense;data;0;13;94 Services communs non ventilés;921542260.00;0.00;965196226.00;965196226.00;965196226.00
+Grand Est;operating_expense;data;0;14;953 Virement à la section d'investissement;321928834.00;;336468536.00;336468536.00;336468536.00
+Grand Est;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+Grand Est;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;3328603356.00;0.00;3657428319.00;3657428319.00;3657428319.00
+Grand Est;operating_revenue;data;0;17;93 Services ventilés;342365806.00;0.00;549030819.00;549030819.00;549030819.00
+Grand Est;operating_revenue;data;0;18;94 Services communs non ventilés;2986237550.00;0.00;3108397500.00;3108397500.00;3108397500.00
+Grand Est;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00

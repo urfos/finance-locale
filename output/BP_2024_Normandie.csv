@@ -1,0 +1,28 @@
+﻿region;section;row_type;level;row_index;description;budget_anterieur;restes_a_realiser_n1;propositions_nouvelles;vote_assemblee;total_budget
+Normandie;investment_expense;section_header;0;0;DEPENSES D’INVESTISSEMENT;1255879963.00;0.00;1382520883.00;1382520483.00;1382520483.00
+Normandie;investment_expense;data;0;1;90 Opérations ventilées;859301895.00;0.00;976788190.00;976787790.00;976787790.00
+Normandie;investment_expense;data;1;1;-en AP/CP (2);859299895.00;0.00;976788190.00;976787790.00;976787790.00
+Normandie;investment_expense;data;1;1;-hors AP/CP (2);2000.00;0.00;0.00;0.00;0.00
+Normandie;investment_expense;data;1;1;Dont opérations pour comptes de tiers;0.00;0.00;0.00;0.00;0.00
+Normandie;investment_expense;data;0;2;92 Opérations non ventilées;396578068.00;0.00;405732693.00;405732693.00;405732693.00
+Normandie;investment_expense;data;0;3;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Normandie;investment_revenue;section_header;0;4;RECETTES D’INVESTISSEMENT;1255879963.00;0.00;1382520483.00;1382520483.00;1382520483.00
+Normandie;investment_revenue;data;0;5;90 Opérations ventilées;211521611.00;0.00;230006108.00;230006108.00;230006108.00
+Normandie;investment_revenue;data;1;5;-Recettes affectées;211521611.00;0.00;230006108.00;230006108.00;230006108.00
+Normandie;investment_revenue;data;1;5;-Financement par le tiers de l’opération confiée à la collectivité;0.00;0.00;0.00;0.00;0.00
+Normandie;investment_revenue;data;0;6;92 Opérations non ventilées (sauf 922-1068);1043123352.00;0.00;1146514375.00;1146514375.00;1146514375.00
+Normandie;investment_revenue;data;0;7;954 Produit des cessions d'immobilisations;0.00;0.00;6000000.00;6000000.00;6000000.00
+Normandie;investment_revenue;data;0;8;951 Virement de la section de fonctionnement;1235000.00;;0.00;0.00;0.00
+Normandie;investment_revenue;data;0;9;922-1068 Excédents de fonctionnement capitalisés;0.00;;0.00;0.00;0.00
+Normandie;investment_revenue;data;0;10;001 Solde exécution invest. reporté;0.00;;0.00;0.00;0.00
+Normandie;operating_expense;section_header;0;11;DEPENSES DE FONCTIONNEMENT;1798194547.00;0.00;1832904493.00;1832904493.00;1832904493.00
+Normandie;operating_expense;data;0;12;93 Services ventilés;1210542290.00;0.00;1242450467.00;1242450467.00;1242450467.00
+Normandie;operating_expense;data;1;12;-en AE/CP;896497293.00;0.00;927010549.00;927010549.00;927010549.00
+Normandie;operating_expense;data;1;12;-hors AE/CP;314044997.00;0.00;315439918.00;315439918.00;315439918.00
+Normandie;operating_expense;data;0;13;94 Services communs non ventilés;586417257.00;0.00;590454026.00;590454026.00;590454026.00
+Normandie;operating_expense;data;0;14;953 Virement à la section d'investissement;1235000.00;;0.00;0.00;0.00
+Normandie;operating_expense;data;0;15;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
+Normandie;operating_revenue;section_header;0;16;RECETTES DE FONCTIONNEMENT;1798194547.00;0.00;1832904493.00;1832904493.00;1832904493.00
+Normandie;operating_revenue;data;0;17;93 Services ventilés;173237373.00;0.00;128087083.00;128087083.00;128087083.00
+Normandie;operating_revenue;data;0;18;94 Services communs non ventilés;1624957174.00;0.00;1704817410.00;1704817410.00;1704817410.00
+Normandie;operating_revenue;data;0;19;002 Résultat de fonctionnement reporté;0.00;;0.00;0.00;0.00
