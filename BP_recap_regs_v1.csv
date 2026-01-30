@@ -1,0 +1,245 @@
+region,section,row_type,level,row_index,description,budget_anterieur,restes_a_realiser_n1,propositions_nouvelles,vote_assemblee,total_budget
+Auvergne-Rhone-Alpes,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,0,0,3926800000,3926800000,3926800000
+Auvergne-Rhone-Alpes,investment_expense,data,0,1,90 Opérations ventilées,0,0,1564400000,1564400000,1564400000
+Auvergne-Rhone-Alpes,investment_expense,data,1,1,- en AP/CP (2),0,0,1.337e+09,1.337e+09,1.337e+09
+Auvergne-Rhone-Alpes,investment_expense,data,1,1,- hors AP/CP (2),0,0,227400000,227400000,227400000
+Auvergne-Rhone-Alpes,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,0,0,0
+Auvergne-Rhone-Alpes,investment_expense,data,0,2,92 Opérations non ventilées,0,0,2362400000,2362400000,2362400000
+Auvergne-Rhone-Alpes,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Auvergne-Rhone-Alpes,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,0,0,3926800000,3926800000,3926800000
+Auvergne-Rhone-Alpes,investment_revenue,data,0,5,90 Opérations ventilées,0,0,501900000,501900000,501900000
+Auvergne-Rhone-Alpes,investment_revenue,data,1,5,- Recettes affectées,0,0,501900000,501900000,501900000
+Auvergne-Rhone-Alpes,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,0,0,0,0,0
+Auvergne-Rhone-Alpes,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),0,0,2469447000,2469447000,2469447000
+Auvergne-Rhone-Alpes,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,0,0,0
+Auvergne-Rhone-Alpes,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,0,,955453000,955453000,955453000
+Auvergne-Rhone-Alpes,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Auvergne-Rhone-Alpes,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Auvergne-Rhone-Alpes,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,0,0,5212200000,5212200000,5212200000
+Auvergne-Rhone-Alpes,operating_expense,data,0,12,93 Services ventilés,0,0,2639446000,2639446000,2639446000
+Auvergne-Rhone-Alpes,operating_expense,data,1,12,- en AE/CP,0,0,1357948323,1357948323,1357948323
+Auvergne-Rhone-Alpes,operating_expense,data,1,12,- hors AE/CP,0,0,1281497677,1281497677,1281497677
+Auvergne-Rhone-Alpes,operating_expense,data,0,13,94 Services communs non ventilés,0,0,1617301000,1617301000,1617301000
+Auvergne-Rhone-Alpes,operating_expense,data,0,14,953 Virement à la section d'investissement,0,,955453000,955453000,955453000
+Auvergne-Rhone-Alpes,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Auvergne-Rhone-Alpes,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,0,0,5212200000,5212200000,5212200000
+Auvergne-Rhone-Alpes,operating_revenue,data,0,17,93 Services ventilés,0,0,251160000,251160000,251160000
+Auvergne-Rhone-Alpes,operating_revenue,data,0,18,94 Services communs non ventilés,0,0,4961040000,4961040000,4961040000
+Auvergne-Rhone-Alpes,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Bourgogne-Franche-Comté,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,0,0,1086807321.91,1086807321.91,1086807321.91
+Bourgogne-Franche-Comté,investment_expense,data,0,1,90 Opérations ventilées,0,0,615359804.91,615359804.91,615359804.91
+Bourgogne-Franche-Comté,investment_expense,data,1,1,-en AP/CP (2),0,0,615338804.91,615338804.91,615338804.91
+Bourgogne-Franche-Comté,investment_expense,data,1,1,-hors AP/CP (2),0,0,21000,21000,21000
+Bourgogne-Franche-Comté,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,1378220,1378220,1378220
+Bourgogne-Franche-Comté,investment_expense,data,0,2,92 Opérations non ventilées,0,0,471447517,471447517,471447517
+Bourgogne-Franche-Comté,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Bourgogne-Franche-Comté,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,0,0,1086807321.91,1086807321.91,1086807321.91
+Bourgogne-Franche-Comté,investment_revenue,data,0,5,90 Opérations ventilées,0,0,149867674.77,149867674.77,149867674.77
+Bourgogne-Franche-Comté,investment_revenue,data,1,5,-Recettes affectées,0,0,149867674.77,149867674.77,149867674.77
+Bourgogne-Franche-Comté,investment_revenue,data,1,5,-Financement par le tiers de l’opération confiée à la collectivité,0,0,0,0,0
+Bourgogne-Franche-Comté,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),0,0,872765337.46,872765337.46,872765337.46
+Bourgogne-Franche-Comté,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,0,0,0
+Bourgogne-Franche-Comté,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,0,,64174309.68,64174309.68,64174309.68
+Bourgogne-Franche-Comté,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Bourgogne-Franche-Comté,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Bourgogne-Franche-Comté,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,0,0,1675266188.17,1675266188.17,1675266188.17
+Bourgogne-Franche-Comté,operating_expense,data,0,12,93 Services ventilés,0,0,1106338330.49,1106338330.49,1106338330.49
+Bourgogne-Franche-Comté,operating_expense,data,1,12,-en AE/CP,0,0,789004729.09,789004729.09,789004729.09
+Bourgogne-Franche-Comté,operating_expense,data,1,12,-hors AE/CP,0,0,317333601.4,317333601.4,317333601.4
+Bourgogne-Franche-Comté,operating_expense,data,0,13,94 Services communs non ventilés,0,0,504753548,504753548,504753548
+Bourgogne-Franche-Comté,operating_expense,data,0,14,953 Virement à la section d'investissement,0,,64174309.68,64174309.68,64174309.68
+Bourgogne-Franche-Comté,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Bourgogne-Franche-Comté,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,0,0,1675266188.17,1675266188.17,1675266188.17
+Bourgogne-Franche-Comté,operating_revenue,data,0,17,93 Services ventilés,0,0,136183766.17,136183766.17,136183766.17
+Bourgogne-Franche-Comté,operating_revenue,data,0,18,94 Services communs non ventilés,0,0,1539082422,1539082422,1539082422
+Bourgogne-Franche-Comté,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Bretagne,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,0,0,1277068100,1277068100,1277068100
+Bretagne,investment_expense,data,0,1,90 Opérations ventilées,0,0,709774800,709774800,709774800
+Bretagne,investment_expense,data,1,1,- en AP/CP (2),0,0,708724800,708724800,708724800
+Bretagne,investment_expense,data,1,1,- hors AP/CP (2),0,0,1050000,1050000,1050000
+Bretagne,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,0,0,0
+Bretagne,investment_expense,data,0,2,92 Opérations non ventilées,0,0,567293300,567293300,567293300
+Bretagne,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Bretagne,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,0,0,1277068100,1277068100,1277068100
+Bretagne,investment_revenue,data,0,5,90 Opérations ventilées,0,0,217828100,217828100,217828100
+Bretagne,investment_revenue,data,1,5,- Recettes affectées,0,0,217828100,217828100,217828100
+Bretagne,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,0,0,0,0,0
+Bretagne,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),0,0,1054450000,1054450000,1054450000
+Bretagne,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,4790000,4790000,4790000
+Bretagne,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,0,,0,0,0
+Bretagne,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Bretagne,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Bretagne,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,0,0,1671925200,1671925200,1671925200
+Bretagne,operating_expense,data,0,12,93 Services ventilés,0,0,1042340762,1042340960,1042340960
+Bretagne,operating_expense,data,1,12,- en AE/CP,0,0,836245762,836245960,836245960
+Bretagne,operating_expense,data,1,12,- hors AE/CP,0,0,206095000,206095000,206095000
+Bretagne,operating_expense,data,0,13,94 Services communs non ventilés,0,0,629164448,629164250,629164250
+Bretagne,operating_expense,data,0,14,953 Virement à la section d'investissement,0,,0,0,0
+Bretagne,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Bretagne,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,0,0,1671925200,1671925200,1671925200
+Bretagne,operating_revenue,data,0,17,93 Services ventilés,0,0,122489038,122489038,122489038
+Bretagne,operating_revenue,data,0,18,94 Services communs non ventilés,0,0,1549436162,1549436162,1549436162
+Bretagne,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Centre,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,1054041561,0,1189214700,1189214700,1189214700
+Centre,investment_expense,data,0,1,90 Opérations ventilées,580112900,0,582838700,582838700,582838700
+Centre,investment_expense,data,1,1,- en AP/CP (2),563321900,0,582377700,582377700,582377700
+Centre,investment_expense,data,1,1,- hors AP/CP (2),16791000,0,461000,461000,461000
+Centre,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,0,0,0
+Centre,investment_expense,data,0,2,92 Opérations non ventilées,473928661,0,606376000,606376000,606376000
+Centre,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Centre,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,1054041561,0,1189214700,1189214700,1189214700
+Centre,investment_revenue,data,0,5,90 Opérations ventilées,226750400,0,242839400,242839400,242839400
+Centre,investment_revenue,data,1,5,- Recettes affectées,226750400,0,242839400,242839400,242839400
+Centre,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,0,0,0,0,0
+Centre,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),668145000,0,808029000,808029000,808029000
+Centre,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,19130000,0,153000,153000,153000
+Centre,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,140016161,,138193300,138193300,138193300
+Centre,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Centre,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Centre,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,1591515661,0,1660277000,1660277000,1660277000
+Centre,operating_expense,data,0,12,93 Services ventilés,1021584454,0,1022165700,1022165700,1022165700
+Centre,operating_expense,data,1,12,- en AE/CP,752592550,0,760997377,760997377,760997377
+Centre,operating_expense,data,1,12,- hors AE/CP,268991904,0,261168323,261168323,261168323
+Centre,operating_expense,data,0,13,94 Services communs non ventilés,429915046,0,499918000,499918000,499918000
+Centre,operating_expense,data,0,14,953 Virement à la section d'investissement,140016161,,138193300,138193300,138193300
+Centre,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Centre,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,1591515661,0,1660277000,1660277000,1660277000
+Centre,operating_revenue,data,0,17,93 Services ventilés,182390000,0,155319000,155319000,155319000
+Centre,operating_revenue,data,0,18,94 Services communs non ventilés,1409125661,0,1504958000,1504958000,1504958000
+Centre,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Grand Est,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,2863554063,0,3006367194,3006367194,3006367194
+Grand Est,investment_expense,data,0,1,90 Opérations ventilées,1441047872,0,1764640361,1764640361,1764640361
+Grand Est,investment_expense,data,1,1,- en AP/CP (2),1332832164,0,1562889361,1562889361,1562889361
+Grand Est,investment_expense,data,1,1,- hors AP/CP (2),108215708,0,201751000,201751000,201751000
+Grand Est,investment_expense,data,1,1,Dont opérations pour comptes de tiers,12022952,0,13713400,13713400,13713400
+Grand Est,investment_expense,data,0,2,92 Opérations non ventilées,1422506191,0,1241726833,1241726833,1241726833
+Grand Est,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Grand Est,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,2863554063,0,3006367194,3006367194,3006367194
+Grand Est,investment_revenue,data,0,5,90 Opérations ventilées,668385619,0,978590261,978590261,978590261
+Grand Est,investment_revenue,data,1,5,- Recettes affectées,663965619,0,970290261,970290261,970290261
+Grand Est,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,4420000,0,8300000,8300000,8300000
+Grand Est,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),1871579610,0,1689258397,1689258397,1689258397
+Grand Est,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,1660000,0,2050000,2050000,2050000
+Grand Est,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,321928834,,336468536,336468536,336468536
+Grand Est,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Grand Est,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Grand Est,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,3328603356,0,3657428319,3657428319,3657428319
+Grand Est,operating_expense,data,0,12,93 Services ventilés,2085132262,0,2355763557,2355763557,2355763557
+Grand Est,operating_expense,data,1,12,- en AE/CP,1705497424,0,1943970784,1943970784,1943970784
+Grand Est,operating_expense,data,1,12,- hors AE/CP,379634838,0,411792773,411792773,411792773
+Grand Est,operating_expense,data,0,13,94 Services communs non ventilés,921542260,0,965196226,965196226,965196226
+Grand Est,operating_expense,data,0,14,953 Virement à la section d'investissement,321928834,,336468536,336468536,336468536
+Grand Est,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Grand Est,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,3328603356,0,3657428319,3657428319,3657428319
+Grand Est,operating_revenue,data,0,17,93 Services ventilés,342365806,0,549030819,549030819,549030819
+Grand Est,operating_revenue,data,0,18,94 Services communs non ventilés,2986237550,0,3108397500,3108397500,3108397500
+Grand Est,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+IdF,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,3512516000,0,3736719000,3736719000,3736719000
+IdF,investment_expense,data,0,1,90 Opérations ventilées,2.125e+09,0,2.325e+09,2.325e+09,2.325e+09
+IdF,investment_expense,data,1,1,- en AP/CP (2),2123717000,0,2324980000,2324980000,2324980000
+IdF,investment_expense,data,1,1,- hors AP/CP (2),1283000,0,20000,20000,20000
+IdF,investment_expense,data,1,1,Dont opérations pour comptes de tiers,5158433,0,5239000,5239000,5239000
+IdF,investment_expense,data,0,2,92 Opérations non ventilées,1387516000,0,1411719000,1411719000,1411719000
+IdF,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+IdF,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,3512516000,0,3736719000,3736719000,3736719000
+IdF,investment_revenue,data,0,5,90 Opérations ventilées,190797000,0,139799000,139799000,139799000
+IdF,investment_revenue,data,1,5,- Recettes affectées,178654000,0,133589000,133589000,133589000
+IdF,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,12143000,0,6210000,6210000,6210000
+IdF,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),3276463000,0,3318492000,3318492000,3318492000
+IdF,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,0,0,0
+IdF,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,45256000,,278428000,278428000,278428000
+IdF,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+IdF,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+IdF,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,5613108000,0,5909815500,5909815500,5909815500
+IdF,operating_expense,data,0,12,93 Services ventilés,2697135000,0,2807135000,2807135000,2807135000
+IdF,operating_expense,data,1,12,- en AE/CP,2185066000,0,2262507000,2262507000,2262507000
+IdF,operating_expense,data,1,12,- hors AE/CP,512069000,0,544628000,544628000,544628000
+IdF,operating_expense,data,0,13,94 Services communs non ventilés,2870717000,0,2824252500,2824252500,2824252500
+IdF,operating_expense,data,0,14,953 Virement à la section d'investissement,45256000,,278428000,278428000,278428000
+IdF,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+IdF,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,5613108000,0,5909815500,5909815500,5909815500
+IdF,operating_revenue,data,0,17,93 Services ventilés,153250000,0,320770000,320770000,320770000
+IdF,operating_revenue,data,0,18,94 Services communs non ventilés,5459858000,0,5589045500,5589045500,5589045500
+IdF,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Normandie,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,1255879963,0,1382520883,1382520483,1382520483
+Normandie,investment_expense,data,0,1,90 Opérations ventilées,859301895,0,976788190,976787790,976787790
+Normandie,investment_expense,data,1,1,-en AP/CP (2),859299895,0,976788190,976787790,976787790
+Normandie,investment_expense,data,1,1,-hors AP/CP (2),2000,0,0,0,0
+Normandie,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,0,0,0
+Normandie,investment_expense,data,0,2,92 Opérations non ventilées,396578068,0,405732693,405732693,405732693
+Normandie,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Normandie,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,1255879963,0,1382520483,1382520483,1382520483
+Normandie,investment_revenue,data,0,5,90 Opérations ventilées,211521611,0,230006108,230006108,230006108
+Normandie,investment_revenue,data,1,5,-Recettes affectées,211521611,0,230006108,230006108,230006108
+Normandie,investment_revenue,data,1,5,-Financement par le tiers de l’opération confiée à la collectivité,0,0,0,0,0
+Normandie,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),1043123352,0,1146514375,1146514375,1146514375
+Normandie,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,6e+06,6e+06,6e+06
+Normandie,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,1235000,,0,0,0
+Normandie,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Normandie,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Normandie,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,1798194547,0,1832904493,1832904493,1832904493
+Normandie,operating_expense,data,0,12,93 Services ventilés,1210542290,0,1242450467,1242450467,1242450467
+Normandie,operating_expense,data,1,12,-en AE/CP,896497293,0,927010549,927010549,927010549
+Normandie,operating_expense,data,1,12,-hors AE/CP,314044997,0,315439918,315439918,315439918
+Normandie,operating_expense,data,0,13,94 Services communs non ventilés,586417257,0,590454026,590454026,590454026
+Normandie,operating_expense,data,0,14,953 Virement à la section d'investissement,1235000,,0,0,0
+Normandie,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Normandie,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,1798194547,0,1832904493,1832904493,1832904493
+Normandie,operating_revenue,data,0,17,93 Services ventilés,173237373,0,128087083,128087083,128087083
+Normandie,operating_revenue,data,0,18,94 Services communs non ventilés,1624957174,0,1704817410,1704817410,1704817410
+Normandie,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Nouvelle-Aquitaine,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,0,0,2703924625.18,2703924625.18,2703924625.18
+Nouvelle-Aquitaine,investment_expense,data,0,1,90 Opérations ventilées,0,0,1117774048,1117774048,1117774048
+Nouvelle-Aquitaine,investment_expense,data,1,1,- en AP/CP (2),0,0,1117729048,1117729048,1117729048
+Nouvelle-Aquitaine,investment_expense,data,1,1,- hors AP/CP (2),0,0,45000,45000,45000
+Nouvelle-Aquitaine,investment_expense,data,1,1,Dont opérations pour comptes de tiers,0,0,2500000,2500000,2500000
+Nouvelle-Aquitaine,investment_expense,data,0,2,92 Opérations non ventilées,0,0,1586150577.18,1586150577.18,1586150577.18
+Nouvelle-Aquitaine,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Nouvelle-Aquitaine,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,0,0,2703924625.18,2703924625.18,2703924625.18
+Nouvelle-Aquitaine,investment_revenue,data,0,5,90 Opérations ventilées,0,0,348092000,348092000,348092000
+Nouvelle-Aquitaine,investment_revenue,data,1,5,- Recettes affectées,0,0,335092000,335092000,335092000
+Nouvelle-Aquitaine,investment_revenue,data,1,5,- Financement par le tiers de l’opération confiée à la collectivité,0,0,1.3e+07,1.3e+07,1.3e+07
+Nouvelle-Aquitaine,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),0,0,2176074718.18,2176074718.18,2176074718.18
+Nouvelle-Aquitaine,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,0,0,0,0,0
+Nouvelle-Aquitaine,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,0,,179757907,179757907,179757907
+Nouvelle-Aquitaine,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Nouvelle-Aquitaine,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Nouvelle-Aquitaine,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,0,0,3385682991,3385682991,3385682991
+Nouvelle-Aquitaine,operating_expense,data,0,12,93 Services ventilés,0,0,2066283625,2066283625,2066283625
+Nouvelle-Aquitaine,operating_expense,data,1,12,- en AE/CP,0,0,1581209418,1581209418,1581209418
+Nouvelle-Aquitaine,operating_expense,data,1,12,- hors AE/CP,0,0,485074207,485074207,485074207
+Nouvelle-Aquitaine,operating_expense,data,0,13,94 Services communs non ventilés,0,0,1139641459,1139641459,1139641459
+Nouvelle-Aquitaine,operating_expense,data,0,14,953 Virement à la section d'investissement,0,,179757907,179757907,179757907
+Nouvelle-Aquitaine,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Nouvelle-Aquitaine,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,0,0,3385682991,3385682991,3385682991
+Nouvelle-Aquitaine,operating_revenue,data,0,17,93 Services ventilés,0,0,140449688,140449688,140449688
+Nouvelle-Aquitaine,operating_revenue,data,0,18,94 Services communs non ventilés,0,0,3245233303,3245233303,3245233303
+Nouvelle-Aquitaine,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+Occitanie,investment_expense,section_header,0,0,DEPENSES D’INVESTISSEMENT,2229802326.49,0,2360434712.87,0,2360434712.87
+Occitanie,investment_expense,data,0,1,90 Opérations ventilées,1348034451,0,1201827511,0,1201827511
+Occitanie,investment_expense,data,1,1,-en AP/CP (2),1286168651,0,1134017511,0,1134017511
+Occitanie,investment_expense,data,1,1,-hors AP/CP (2),61865800,0,67810000,0,67810000
+Occitanie,investment_expense,data,1,1,Dont opérations pour comptes de tiers,1341555.78,0,428953.38,0,428953.38
+Occitanie,investment_expense,data,0,2,92 Opérations non ventilées,881767875.49,0,1158607201.87,0,1158607201.87
+Occitanie,investment_expense,data,0,3,001 Solde exécution invest. reporté,0,,0,0,0
+Occitanie,investment_revenue,section_header,0,4,RECETTES D’INVESTISSEMENT,2229802326.49,0,2360434712.87,0,2360434712.87
+Occitanie,investment_revenue,data,0,5,90 Opérations ventilées,546617791,0,459186350,0,459186350
+Occitanie,investment_revenue,data,1,5,-Recettes affectées,537232421,0,453046350,0,453046350
+Occitanie,investment_revenue,data,1,5,-Financement par le tiers de l’opération confiée à la collectivité,9385370,0,6140000,0,6140000
+Occitanie,investment_revenue,data,0,6,92 Opérations non ventilées (sauf 922-1068),1679384535.49,0,1901128362.87,0,1901128362.87
+Occitanie,investment_revenue,data,0,7,954 Produit des cessions d'immobilisations,3800000,0,120000,0,120000
+Occitanie,investment_revenue,data,0,8,951 Virement de la section de fonctionnement,0,,0,0,0
+Occitanie,investment_revenue,data,0,9,922-1068 Excédents de fonctionnement capitalisés,0,,0,0,0
+Occitanie,investment_revenue,data,0,10,001 Solde exécution invest. reporté,0,,0,0,0
+Occitanie,operating_expense,section_header,0,11,DEPENSES DE FONCTIONNEMENT,2997680068.49,0,3090075837.41,0,3090075837.41
+Occitanie,operating_expense,data,0,12,93 Services ventilés,1978605282.53,0,2018479614.38,0,2018479614.38
+Occitanie,operating_expense,data,1,12,-en AE/CP,1541737062.53,0,1585309002.38,0,1585309002.38
+Occitanie,operating_expense,data,1,12,-hors AE/CP,436868220,0,433170612,0,433170612
+Occitanie,operating_expense,data,0,13,94 Services communs non ventilés,1019074785.96,0,1071596223.03,0,1071596223.03
+Occitanie,operating_expense,data,0,14,953 Virement à la section d'investissement,0,,0,0,0
+Occitanie,operating_expense,data,0,15,002 Résultat de fonctionnement reporté,0,,0,0,0
+Occitanie,operating_revenue,section_header,0,16,RECETTES DE FONCTIONNEMENT,2997680068.49,0,3090075837.41,0,3090075837.41
+Occitanie,operating_revenue,data,0,17,93 Services ventilés,358475533,0,397739175,0,397739175
+Occitanie,operating_revenue,data,0,18,94 Services communs non ventilés,2639204535.49,0,2692336662.41,0,2692336662.41
+Occitanie,operating_revenue,data,0,19,002 Résultat de fonctionnement reporté,0,,0,0,0
+PACA,unknown,data,0,0,TOTAL,2060878550,0,2282313386,2282313386,2282313386
