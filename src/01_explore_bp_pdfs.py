@@ -14,26 +14,30 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 BP_DIR = DATA_DIR / "Documents BP Collectivités"
 OUTPUT_DIR = Path(__file__).parent.parent / "output"
 
-SAMPLE_REGION = "Auvergne-Rhone-Alpes"
+# Sample regions with their page ranges from pages_BP_regions.txt
+SAMPLE_REGIONS = {
+    "Auvergne-Rhone-Alpes": {"pages": [16, 17, 18]},  # Pages 17-19 (0-indexed)
+    "Bretagne": {"pages": [18, 19, 20]}  # Pages 19-21 (0-indexed)
+}
 PDF_FILE = "BP2024.pdf"
-SAMPLE_PAGES = [16, 17, 18]  # Pages 17-19 (0-indexed)
 
-def explore_pdf():
-    """Explore PDF structure and table layouts"""
+def explore_pdf(region_name, sample_pages):
+    """Explore PDF structure and table layouts for a given region"""
     
-    pdf_path = BP_DIR / SAMPLE_REGION / "BP" / PDF_FILE
+    pdf_path = BP_DIR / region_name / "BP" / PDF_FILE
     
     if not pdf_path.exists():
         print(f"ERROR: PDF not found at {pdf_path}")
-        sys.exit(1)
+        return False
     
-    print(f"Exploring: {pdf_path}")
-    print(f"File size: {pdf_path.stat().st_size / 1024:.1f} KB\n")
+    print(f"\nExploring: {region_name} - {pdf_path}")
+    print(f"File size: {pdf_path.stat().st_size / 1024:.1f} KB")
+    print(f"Sample pages: {[p+1 for p in sample_pages]}\n")
     
     with pdfplumber.open(pdf_path) as pdf:
-        print(f"Total pages: {len(pdf.pages)}\n")
+        print(f"Total pages in PDF: {len(pdf.pages)}\n")
         
-        for page_idx in SAMPLE_PAGES:
+        for page_idx in sample_pages:
             if page_idx >= len(pdf.pages):
                 print(f"Page {page_idx + 1} does not exist")
                 continue
@@ -71,6 +75,20 @@ def explore_pdf():
                                 print(f"      Col {i}: {str(cell)[:50]}")
 
 if __name__ == "__main__":
-    explore_pdf()
+    print("="*70)
+    print("BP PDF STRUCTURE EXPLORATION")
+    print("="*70)
+    
+    all_success = True
+    for region, config in SAMPLE_REGIONS.items():
+        try:
+            explore_pdf(region, config["pages"])
+        except Exception as e:
+            print(f"\nERROR exploring {region}: {e}")
+            all_success = False
+    
     print("\n" + "="*70)
-    print("Exploration complete")
+    if all_success:
+        print("Exploration complete for all regions")
+    else:
+        print("Exploration complete with some errors")
