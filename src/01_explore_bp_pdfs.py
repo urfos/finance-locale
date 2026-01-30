@@ -2,10 +2,11 @@
 """
 Phase 1: Explore BP PDF structure to understand table layouts
 Examines sample pages to identify budget table formats
+Will save extracted tables as CSV files for each region
 """
 
 import pdfplumber
-import json
+import pandas as pd
 import sys
 from pathlib import Path
 
@@ -73,6 +74,13 @@ def explore_pdf(region_name, sample_pages):
                             print(f"    Second row (sample data):")
                             for i, cell in enumerate(table[1][:5]):
                                 print(f"      Col {i}: {str(cell)[:50]}")
+                        
+                        # Save table to CSV
+                        df = pd.DataFrame(table[1:], columns=table[0])
+                        csv_filename = f"BP_2024_{region_name}_page{page_idx+1}_table{t_idx+1}.csv"
+                        csv_path = OUTPUT_DIR / csv_filename
+                        df.to_csv(csv_path, index=False, encoding='utf-8')
+                        print(f"\n    ✓ Saved to: {csv_filename}")
 
 if __name__ == "__main__":
     print("="*70)

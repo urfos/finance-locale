@@ -52,7 +52,7 @@ Reconcile Budget Primitifs (BP - voted budgets by local authorities) with DGCL g
 - [ ] Build PDF table detection & parsing script:
   - Use `pdfplumber` to extract tables from PDFs
   - Parse table structure (identify column headers, data rows)
-  - Output: JSON or pickle with raw extracted tables (for debugging)
+  - Output: CSV files with extracted tables (one CSV per region: `output/BP_2024_[RegionName]_raw.csv`)
 
 ### Phase 3: Table Harmonization & CSV Creation
 - [ ] Document BP table structure for 2024:
