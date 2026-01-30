@@ -40,19 +40,22 @@ Reconcile Budget Primitifs (BP - voted budgets by local authorities) with DGCL g
 - [x] Sample DGCL spreadsheet (BP2024_Reg.xlsx) to understand columns and structure
 - [x] Identify which pages contain the budget summary tables in BP PDFs (reference: pages_BP_regions.txt)
 
-### Phase 2: PDF Extraction & Processing
-- [ ] Build Python script to extract specific pages from BP PDFs:
-  - Input: Region folder path, year, page ranges
-  - Use `PyPDF2` or `pdfplumber` to extract pages
-  - Output: Individual region PDFs or temporary page PDFs
-- [ ] Merge extracted pages into consolidated PDFs per region-year combination
+### Phase 2: PDF Extraction & Processing 🔄
+- [x] Build Python script to extract specific pages from BP PDFs:
+  - Input: Region folder path, year, page ranges from config
+  - Use PyPDF2 to extract pages
+  - Output: `output/BP_2024_[RegionName]_extracted.pdf`
+  - Script: `src/03_extract_bp_pages.py`
+- [x] Merge extracted pages into consolidated PDFs per region-year combination
   - Input: Extracted page PDFs
-  - Use `PyPDF2.PdfWriter` to merge
+  - Use PyPDF2.PdfWriter to merge
   - Output: `output/BP_2024_[RegionName]_consolidated.pdf`
-- [ ] Build PDF table detection & parsing script:
-  - Use `pdfplumber` to extract tables from PDFs
+  - Script: `src/04_merge_bp_pages.py`
+- [x] Build PDF table detection & parsing script:
+  - Use pdfplumber to extract tables from PDFs
   - Parse table structure (identify column headers, data rows)
-  - Output: CSV files with extracted tables (one CSV per region: `output/BP_2024_[RegionName]_raw.csv`)
+  - Output: CSV files with extracted tables (one CSV per region: `output/BP_2024_[RegionName]_raw_tables.csv`)
+  - Script: `src/05_parse_bp_tables.py`
 
 ### Phase 3: Table Harmonization & CSV Creation
 - [ ] Document BP table structure for 2024:
