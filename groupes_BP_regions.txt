@@ -1,0 +1,11 @@
+Auvergne Rhone Alpes 1
+Bourgogne Franche Comté 1
+Bretagne 2
+Centre VdL 2
+Grand Est 2
+Hauts de France 1
+Ile de France 2
+Normandie 2
+Nouvelle Aquitaine 1
+Occitanie 2
+Provence Alpes Cote d'Azur 2 
