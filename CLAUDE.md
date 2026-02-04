@@ -1,11 +1,11 @@
 # CLAUDE Session Notes - Finance Locale Project
 
-**Last Updated**: 2026-01-30
-**Status**: Phase 2 - PDF Table Parsing ✅ COMPLETE (10/11 regions)
+**Last Updated**: 2026-02-02
+**Status**: Phase 2 - PDF Table Parsing ✅ COMPLETE (11/11 regions)
 
 ## Current Task Summary
 
-Parsing tables from Budget Primitifs (BP) PDFs complete. New parser with row expansion and R-compatible number format working on 10/11 regions.
+All 11 regions successfully parsed. HdF extraction corrected (pages 30-42 instead of 25-37). Parser refactored for flexible region selection.
 
 ## Parser v2 Features (05_parse_bp_tables.py)
 
@@ -14,6 +14,7 @@ Parsing tables from Budget Primitifs (BP) PDFs complete. New parser with row exp
 - **R-compatible numbers**: `3926800000.00` (no spaces, dot decimal)
 - **Semicolon delimiter**: French Excel compatible
 - **UTF-8 with BOM**: Proper encoding
+- **Flexible region selection**: Command-line args support (e.g., `python 05_parse_bp_tables.py HdF PACA`)
 
 ## Parsing Results
 
@@ -24,7 +25,7 @@ Parsing tables from Budget Primitifs (BP) PDFs complete. New parser with row exp
 | Bretagne | ✅ | 27 |
 | Centre | ✅ | 27 |
 | Grand Est | ✅ | 27 |
-| HdF | ❌ | Different PDF structure (1 table) |
+| HdF | ✅ | 27 |
 | IdF | ✅ | 27 |
 | Normandie | ✅ | 27 |
 | Nouvelle-Aquitaine | ✅ | 27 |
@@ -33,18 +34,22 @@ Parsing tables from Budget Primitifs (BP) PDFs complete. New parser with row exp
 
 ## Known Issues
 
-### HdF (Hauts-de-France)
-- PDF has different structure: only 1 table detected instead of 4
-- Needs manual inspection of source PDF
-
 ### PACA
 - Only 1 row extracted (should be 27)
 - Table 3 structure differs from other regions
 
+## Recent Fixes
+
+### HdF (Hauts-de-France) ✅ FIXED
+- **Issue**: Extraction started at page 25 (empty), but actual budget tables begin at printed "Page 25" (PDF page 30)
+- **Root cause**: Page numbering mismatch (PDF internal vs. printed page numbers)
+- **Solution**: Updated `regions_config.yaml` to pages_start: 30, pages_end: 42
+- **Result**: HdF now extracts correctly with 27 rows, matching other regions
+
 ## Output Files
 
-- `output/BP_2024_<region>.csv` - Parsed budget data (10 files)
-- `output/BP_2024_<region>_extracted.pdf` - Source extracted pages (11 files)
+- `output/BP_2024_<region>.csv` - Parsed budget data (11 files) ✅
+- `output/BP_2024_<region>_extracted.pdf` - Source extracted pages (11 files) ✅
 
 ## Technical Notes
 
@@ -54,6 +59,6 @@ Parsing tables from Budget Primitifs (BP) PDFs complete. New parser with row exp
 
 ## Next Steps
 
-1. Investigate HdF and PACA PDF structure differences
+1. Investigate PACA PDF structure and fix remaining extraction issue
 2. Phase 3: Data harmonization across regions
-3. R analysis scripts
+3. R analysis scripts for budget analysis

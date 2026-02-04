@@ -1,6 +1,6 @@
 library(data.table)
 
-d = fread("output/BP_2024_Auvergne-Rhone-Alpes_v2.csv")
+d = fread("output/BP_2024_HdF.csv")
 d1 = fread("output/BP_2024_Bretagne_v2.csv")
 
 files = dir("output/")

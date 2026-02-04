@@ -53,8 +53,8 @@ regions:
     type: "région"
     bp_pdf: "BP2024.pdf"
     ca_pdf: "CA2024.pdf"
-    pages_start: 25
-    pages_end: 37
+    pages_start: 30
+    pages_end: 42
 
   ile_de_france:
     folder_name: "IdF"

@@ -14,8 +14,6 @@ import sys
 OUTPUT_DIR = Path(__file__).parent.parent / "output"
 YEAR = "2024"
 
-# Test regions only - do not modify until user approves structure
-# UPDATE: User approved - now processing all regions
 ALL_REGIONS = [
     "Auvergne-Rhone-Alpes", "Bourgogne-Franche-Comté", "Bretagne", "Centre",
     "Grand Est", "HdF", "IdF", "Normandie", "Nouvelle-Aquitaine", "Occitanie", "PACA"
@@ -244,20 +242,25 @@ def write_csv(rows, output_path):
     print(f"  ✓ Saved: {output_path.name}")
 
 
-def main():
+def main(regions=None):
     """
-    Parse all 11 regions
+    Parse specified regions (or all if None).
+    Args:
+        regions: list of region names, or None to use ALL_REGIONS
     """
+    if regions is None:
+        regions = ALL_REGIONS
+    
     print("=" * 70)
     print("BP TABLE PARSER v2 - ROW EXPANSION")
     print("=" * 70)
-    print(f"\nProcessing {len(ALL_REGIONS)} regions")
+    print(f"\nProcessing {len(regions)} region(s)")
     print("Delimiter: semicolon (;) for French Excel\n")
     
     success = 0
     failed = 0
     
-    for region in ALL_REGIONS:
+    for region in regions:
         pdf_path = OUTPUT_DIR / f"BP_{YEAR}_{region}_extracted.pdf"
         
         if not pdf_path.exists():
@@ -282,5 +285,16 @@ def main():
 
 
 if __name__ == "__main__":
-    success = main()
+    # Allow specifying regions via command line: python script.py region1 region2 ...
+    regions_to_process = sys.argv[1:] if len(sys.argv) > 1 else None
+    
+    if regions_to_process:
+        # Validate requested regions
+        invalid = [r for r in regions_to_process if r not in ALL_REGIONS]
+        if invalid:
+            print(f"ERROR: Unknown regions: {invalid}")
+            print(f"Valid regions: {', '.join(ALL_REGIONS)}")
+            sys.exit(1)
+    
+    success = main(regions_to_process)
     sys.exit(0 if success else 1)
